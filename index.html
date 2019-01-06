@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="/script.js" defer></script>
+    <link rel="stylesheet" href="/style.css">
+    <style>
+        body {
+            margin: 0;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+            position: fixed;
+            top: 0;
+            width: 100%;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover:not(.active) {
+            background-color: #111;
+        }
+
+        .active {
+            background-color: #4CAF50;
+        }
+    </style>
+</head>
+
+<body>
+
+    <ul id="navBar">
+        <li><a class="btn active" href="#home" onclick="openTab('Home')">Home</a></li>
+        <li><a class="btn" href="#news" onclick="openTab('News')">News</a></li>
+        <li><a class="btn" href="#contact" onclick="openTab('Commands')">Commands</a></li>
+        <li style="float:right"><a class="btn" href="#about" onclick="openTab('Contact')">Contact Us</a></li>
+    </ul>
+
+    <div id="Home" class="NavTab" style="backround-color:#FFFFFF;">
+        <img id="Homebanner" src="https://cdn.glitch.com/b7949d8d-087f-4426-89fc-ff790b6a22bd%2Fsylveon%202.png?1546734044651">
+        <div class="Title1">Sylveon Bot</div>
+        <div class="Title2">
+            -
+        </div>
+        <div class="Title3">
+            A Discord Bot
+        </div>
+        <img id="blueblock" class="BlueBlock" src="https://cdn.glitch.com/b7949d8d-087f-4426-89fc-ff790b6a22bd%2Fblue%20block.png?1546738523627">
+        <img id="PurpleBlock" class="PinkBlock" src="https://cdn.glitch.com/b7949d8d-087f-4426-89fc-ff790b6a22bd%2Fpurple%20block.png?1546745572372">
+        <img id="PlueBlock" class="PurpleBlock" src="https://cdn.glitch.com/b7949d8d-087f-4426-89fc-ff790b6a22bd%2FPurpleBlueBlock.png?1546745321650">
+        <center>
+      <aside class="Home1">
+            Sylveon Bot is a Discord Bot <br>created by Bittersweet Man#5683 <br>and <br>sylveon#8500, featuring: <br> •A
+            level system <br> •Moderation <br> •Admin Commands <br> •Music <br> •And Much More!
+        </aside>
+      </center>
+   <center>
+      <div class="Home2">
+        Find all of the code on our <br> GitHub Repository!<br><br><a href="https://github.com/Bittersweet-man/eevee-bots-sylveon">Sylveon Bot</a>
+      </div>
+      </center>   
+        <center><div class="Home3">
+            Join The Official Discord Server! <br><br>
+            <center><a href="https://discordapp.com/invite/a9epSUd">Sylveon Squad</a></center>
+        </div>
+      </center>
+    </div>
+
+
+    <div id="News" class="NavTab" style="padding:20px;margin-top:30px;background-color:#FFFFFF;height:1500px;display:none">
+        News/Updates
+    </div>
+
+    <div id="Commands" class="NavTab" style="padding:20px;margin-top:30px;background-color:#FFFFFF;height:1500px;display:none">
+        <img id="CommandBanner" class="CommandBanner" src="https://cdn.glitch.com/b7949d8d-087f-4426-89fc-ff790b6a22bd%2FCommandBanner.png?1546747193897">
+        <div class="CommandTitle">
+            Commands
+        </div>
+    </div>
+    <div id="Contact" class="NavTab" style="padding:20px;margin-top:30px;background-color:#FFFFFF;height:1500px;display:none">
+
+    </div>
+
+    <script>
+        function active1() {
+            class="active"
+        }
+
+    </script>
+    <script>
+        function openTab(TabName) {
+            var i;
+            var x = document.getElementsByClassName("NavTab");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            document.getElementById(TabName).style.display = "block";
+        }
+    </script>
+
+
+</body>
+
+</html>

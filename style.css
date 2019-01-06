@@ -1,0 +1,85 @@
+/* CSS files add styling rules to your content */
+
+body {
+  font-family: “Courier New”, Courier, monospace;
+  margin: 2em;
+}
+
+
+.Title1 {
+  color: #DDA0DD;
+  font-size: 40px;
+  position: absolute;
+  top: 70px;
+  left: 56px;
+}
+
+.Title2 {
+  color: #448DB7;
+  font-size: 30px;
+  position: absolute;
+  top: 120px;
+  left: 160px;
+}
+
+.Title3 {
+  color: #FFB6C1;
+  font-size: 35px;
+  position: absolute;
+  top: 150px;
+  left: 56px;
+}
+.BlueBlock {
+  position:absolute;
+  top: 268px;
+  left: 0px;
+}
+
+.Home1 {
+  color: #C95A5A;
+  font-size: 25px;
+  position: absolute;
+  top: 280px;
+  left: 20px;
+}
+
+.CommandTitle {
+  color: #DDA0DD;
+  font-size: 40px;
+  position: absolute;
+  top: 70px;
+  left: 56px;
+}
+
+.CommandBanner{
+  position: absolute;
+  top: 46px;
+  left: 0px;
+}
+
+.PinkBlock{
+ position: absolute;
+  top: 268px;
+  left: 546px;
+}
+
+.PurpleBlock{
+ position: absolute;
+  top: 268px;
+  left: 999px;
+}
+
+.Home3{
+   color: #C95A5A;
+  font-size: 25px;
+  position: absolute;
+  top: 280px;
+  left: 999px;
+}
+.Home2{
+   color: #C95A5A;
+  font-size: 25px;
+  position: absolute;
+  top: 280px;
+  left: 570px;
+}
