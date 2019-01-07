@@ -18,6 +18,7 @@
             position: fixed;
             top: 0;
             width: 100%;
+            z-index: 3;
         }
 
         li {
@@ -47,15 +48,15 @@
     <ul id="navBar">
         <li><a class="btn active" href="#home" onclick="openTab('Home')">Home</a></li>
         <li><a class="btn" href="#news" onclick="openTab('News')">News</a></li>
-        <li><a class="btn" href="#contact" onclick="openTab('Commands')">Commands</a></li>
-        <li style="float:right"><a class="btn" href="#about" onclick="openTab('Contact')">Contact Us</a></li>
+        <li><a class="btn" href="#commands" onclick="openTab('Commands')">Commands</a></li>
+        <li style="float:right"><a class="btn" href="#contact" onclick="openTab('Contact')">Contact Us</a></li>
     </ul>
 
     <div id="Home" class="NavTab" style="backround-color:#FFFFFF;">
         <img id="Homebanner" src="https://cdn.glitch.com/b7949d8d-087f-4426-89fc-ff790b6a22bd%2Fsylveon%202.png?1546734044651">
         <div class="Title1">Sylveon Bot</div>
         <div class="Title2">
-            -
+            —
         </div>
         <div class="Title3">
             A Discord Bot
@@ -64,34 +65,101 @@
         <img id="PurpleBlock" class="PinkBlock" src="https://cdn.glitch.com/b7949d8d-087f-4426-89fc-ff790b6a22bd%2Fpurple%20block.png?1546745572372">
         <img id="PlueBlock" class="PurpleBlock" src="https://cdn.glitch.com/b7949d8d-087f-4426-89fc-ff790b6a22bd%2FPurpleBlueBlock.png?1546745321650">
         <center>
-      <aside class="Home1">
-            Sylveon Bot is a Discord Bot <br>created by Bittersweet Man#5683 <br>and <br>sylveon#8500, featuring: <br> •A
-            level system <br> •Moderation <br> •Admin Commands <br> •Music <br> •And Much More!
-        </aside>
-      </center>
-   <center>
-      <div class="Home2">
-        Find all of the code on our <br> GitHub Repository!<br><br><a href="https://github.com/Bittersweet-man/eevee-bots-sylveon">Sylveon Bot</a>
-      </div>
-      </center>   
-        <center><div class="Home3">
-            Join The Official Discord Server! <br><br>
-            <center><a href="https://discordapp.com/invite/a9epSUd">Sylveon Squad</a></center>
-        </div>
-      </center>
+            <aside class="Home1">
+                Sylveon Bot is a Discord Bot <br>created by Bittersweet Man#5683 <br>and <br>sylveon#8500, featuring:
+                <br> •A
+                level system <br> •Moderation <br> •Admin Commands <br> •Music <br> •And Much More!
+            </aside>
+        </center>
+        <center>
+            <div class="Home2">
+                Find all of the code on our <br> GitHub Repository!<br><br><a href="https://github.com/Bittersweet-man/eevee-bots-sylveon">Sylveon
+                    Bot</a>
+                <br><br>
+                <a href="https://github.com/Bittersweet-man/Sylveon-Website">Sylveon Website</a>
+            </div>
+        </center>
+        <center>
+            <div class="Home3">
+                Join The Official Discord Server! <br><br>
+                <center><a href="https://discordapp.com/invite/a9epSUd">Sylveon Squad</a></center>
+            </div>
+        </center>
     </div>
 
 
-    <div id="News" class="NavTab" style="padding:20px;margin-top:30px;background-color:#FFFFFF;height:1500px;display:none">
+    <div id="News" class="NavTab" style="padding:20px;margin-top:30px;background-color:#FFFFFF;display:none">
         News/Updates
     </div>
 
-    <div id="Commands" class="NavTab" style="padding:20px;margin-top:30px;background-color:#FFFFFF;height:1500px;display:none">
-        <img id="CommandBanner" class="CommandBanner" src="https://cdn.glitch.com/b7949d8d-087f-4426-89fc-ff790b6a22bd%2FCommandBanner.png?1546747193897">
+    <div id="Commands" class="NavTab" style="padding:20px;margin-top:30px;background-color:#FFFFFF;display:none">
+        <img class="CommandBanner" src="https://cdn.glitch.com/b7949d8d-087f-4426-89fc-ff790b6a22bd%2FCommandBanner.png?1546747193897">
         <div class="CommandTitle">
             Commands
         </div>
+
+        <img id="blueblock2" class="BlueBlock2" src="https://cdn.glitch.com/b7949d8d-087f-4426-89fc-ff790b6a22bd%2Fblue%20block.png?1546738523627">
+        <img id="PurpleBlock2" class="PinkBlock2" src="https://cdn.glitch.com/b7949d8d-087f-4426-89fc-ff790b6a22bd%2Fpurple%20block.png?1546745572372">
+      <img id="PlueBlock2" class="PurpleBlock2" src="https://cdn.glitch.com/b7949d8d-087f-4426-89fc-ff790b6a22bd%2FPurpleBlueBlock.png?1546745321650">
+        <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn">Commands ▼</button>
+            <div id="myDropdown" class="dropdown-content">
+                <a href="#simple-commands" onclick="openfolder('Simple')">Simple</a>
+                <a href="#music-commands" onclick="openfolder('Music')">Music</a>
+                <a href="#admin-commands" onclick="openfolder('Admin')">Admin</a>
+              <a href="#animal-commands" onclick="openfolder('Animals')">Animals</a>
+              <a href="#level-commands" onclick="openfolder('Levels')">Levels</a>
+            </div>
+        </div>
+        <div id="Simple" class="DropContent" style="display:none;">
+            Simple
+            <div id="dash" class="CommandDash">
+                —
+            </div>
+         <center><div id="8ball" class="Eightball">
+            <b>8 Ball</b><br>
+            Ask the magical 8 ball any question, and it'll respond with it's prediction!
+           </div></center>
+          <center><div id="announcements" class="announcements">
+            <b>Announcements</b><br>
+            Get/Remove the announcements role, which is pinged instead of @everyone!
+            </div></center>
+          <div class="Flip" align="left">
+            <b>Flip-A-Coin</b><br>
+            Have the bot flip a coin for you, landing on either heads or tails!
+            </div>
+          
+          
+          <img class="AnnouncementsIMG" src="https://cdn.glitch.com/b7949d8d-087f-4426-89fc-ff790b6a22bd%2Fannouncements.PNG?1546823399370">
+        <img class="EightBallImage" src="https://cdn.glitch.com/b7949d8d-087f-4426-89fc-ff790b6a22bd%2Fimage.png?1546819283026">
+          <img class="PurpleBrick" src="https://cdn.glitch.com/b7949d8d-087f-4426-89fc-ff790b6a22bd%2Fpurple%20bit.PNG?1546820388516">
+        </div>
+        <div id="Music" class="DropContent" style="display:none;">
+            Music
+            <div id="dash2" class="CommandDash2">
+                —
+            </div>
+        </div>
+        <div id="Admin" class="DropContent" style="display:none;">
+            Admin
+            <div id="dash3" class="CommandDash3">
+                —
+            </div>
+        </div>
+ <div id="Animals" class="DropContent" style="display:none;">
+            Animals
+   <div id="dash4" class="CommandDash4">
+                —
+            </div>
+      </div>
+       <div id="Levels" class="DropContent" style="display:none;">
+            Levels
+   <div id="dash5" class="CommandDash5">
+                —
+            </div>
+      </div>
     </div>
+
     <div id="Contact" class="NavTab" style="padding:20px;margin-top:30px;background-color:#FFFFFF;height:1500px;display:none">
 
     </div>
@@ -111,7 +179,16 @@
             }
             document.getElementById(TabName).style.display = "block";
         }
+        function openfolder(FolderName) {
+            var i;
+            var x = document.getElementsByClassName("DropContent");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            document.getElementById(FolderName).style.display = "block";
+        }
     </script>
+
 
 
 </body>

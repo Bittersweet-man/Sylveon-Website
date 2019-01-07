@@ -36,7 +36,7 @@ body {
 }
 
 .Home1 {
-  color: #C95A5A;
+  color: black;
   font-size: 25px;
   position: absolute;
   top: 280px;
@@ -55,6 +55,7 @@ body {
   position: absolute;
   top: 46px;
   left: 0px;
+  z-index: -0;
 }
 
 .PinkBlock{
@@ -70,16 +71,169 @@ body {
 }
 
 .Home3{
-   color: #C95A5A;
+   color: black;
   font-size: 25px;
   position: absolute;
   top: 280px;
   left: 999px;
 }
 .Home2{
-   color: #C95A5A;
+   color: black;
   font-size: 25px;
   position: absolute;
   top: 280px;
   left: 570px;
+}
+
+.dropbtn {
+  background-color: #3498DB;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #2980B9;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover {background-color: #ddd;}
+
+.show {display: block;}
+
+.DropContent{
+color: #FFB6C1;
+  font-size: 35px;
+  position: absolute;
+  top: 150px;
+  left: 90px;
+  z-index: 1;
+}
+.dropdown{
+ position: absolute;
+  top: 70px;
+  left: 1100px;
+}
+.BlueBlock2{
+ position: absolute;
+  top: 279px;
+  left: 814px;  
+}
+
+.CommandDash{
+   color: #448DB7;
+  font-size: 30px;
+  position: absolute;
+  top: -35px;
+  left: 50px;
+  z-index:1;
+}
+.CommandDash2{
+   color: #448DB7;
+  font-size: 30px;
+  position: absolute;
+  top: -35px;
+  left: 50px;
+  z-index:1;
+}
+.CommandDash3{
+   color: #448DB7;
+  font-size: 30px;
+  position: absolute;
+  top: -35px;
+  left: 50px;
+  z-index:1;
+}
+.PinkBlock2{
+   position: absolute;
+  top: 279px;
+  left: 361px;  
+}
+.PurpleBlock2{
+   position: absolute;
+  top: 279px;
+  left: 0;  
+}
+.Eightball{
+  color: black;
+  font-size: 20px;
+  position: absolute;
+  top:150px;
+  left:18px;
+}
+.EightBallImage{
+  position: absolute;
+  top:397px;
+  left:-90px;
+}
+.PurpleBrick{
+    position: absolute;
+  top:372px;
+  left:251px;
+}
+.announcements{
+  color: black;
+  font-size: 20px;
+  position: absolute;
+  top:150px;
+  left:300px;
+}
+.AnnouncementsIMG{
+  position: absolute;
+  top:145px;
+  left:470px;
+}
+.FlipIMG{
+  position:absolute;
+  top: 152px;
+ left: 1000px; 
+}
+.Flip{
+    color: black;
+  font-size: 15px;
+  position: absolute;
+  top:150px;
+  left:1100px;
+   text-align: right;
+}
+
+.CommandDash4{
+   color: #448DB7;
+  font-size: 30px;
+  position: absolute;
+  top: -35px;
+  left: 50px;
+  z-index:1;
+}
+
+.CommandDash5{
+   color: #448DB7;
+  font-size: 30px;
+  position: absolute;
+  top: -35px;
+  left: 50px;
+  z-index:1;
 }
